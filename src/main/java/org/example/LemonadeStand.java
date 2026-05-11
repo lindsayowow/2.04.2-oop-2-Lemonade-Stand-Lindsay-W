@@ -83,6 +83,27 @@ public class LemonadeStand {
         }
     }
 
+//    try adding yet another overloaded version of the sellLemonade method that creates a default Lemonade
+//    object and sells it as the normal one does, but includes a parameter specifying a percentage discount
+//    to apply to the price of the lemonade.
+
+//    You will also need to modify the Main class to allow the user to select to sell a discounted lemonade
+//    and provide the discount percentage.
+    public boolean sellLemonade(double discount) {
+        Lemonade lemonade = new Lemonade();
+
+        if (tryMakingLemonade(lemonade) != null) {
+            double convertedDiscount = discount / 100.0;
+            money += (calculateSale(lemonade) * (1.00- convertedDiscount));
+            return true;
+        } else {
+            return false;
+        }
+}
+
+
+
+
     private Lemonade tryMakingLemonade(Lemonade lemonade) {
         if (sugar >= lemonade.getSugar() && ice >= lemonade.getIce() && lemons >= lemonade.getLemons()) {
             sugar -= lemonade.getSugar();
