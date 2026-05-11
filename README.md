@@ -36,7 +36,7 @@ lemonade, but we need to add an overloaded version of this method that allows
 the user to sell a special lemonade where the user has selected the amount of
 lemons, sugar, and ice to use.
 
-Remmember that method overloading allows us to define a new method with the
+Remember that method overloading allows us to define a new method with the
 same name as an existing method, but with different parameters.  In this case,
 we want to add a new method called `sellLemonade` that takes three parameters
 (in this order!):
@@ -74,7 +74,7 @@ create a new `Lemonade` object using these combined values to call the
 
 If you finish and want an additional challenge, try adding yet another
 overloaded version of the `sellLemonade` method that creates a default `Lemonade`
-object and sells it as the normal one does, but inlcudes a parameter specifying
+object and sells it as the normal one does, but includes a parameter specifying
 a percentage discount to apply to the price of the lemonade.
 
 You will also need to modify the `Main` class to allow the user to select to 
